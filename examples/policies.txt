@@ -1,0 +1,71 @@
+=== business-continuity.md ===
+---
+title: Business Continuity and Backup
+reviewed: 2024-09-10
+---
+# Backups
+
+Production databases are backed up daily and backups are stored in a second region. Backups are encrypted. Restore tests are performed once a year.
+
+# Recovery objectives
+
+The recovery time objective for the core platform is 8 hours and the recovery point objective is 24 hours.
+
+=== incident-response.md ===
+---
+title: Incident Response Plan
+reviewed: 2026-03-02
+---
+# Process
+
+We maintain a documented incident response plan with defined roles and an on-call rota. The plan is exercised through a tabletop exercise every year.
+
+# Notification
+
+Customers are notified of a confirmed personal data breach without undue delay and no later than 48 hours after we become aware of it. Regulators are notified within 72 hours where the law requires it.
+
+=== information-security.md ===
+---
+title: Information Security Policy
+reviewed: 2026-06-15
+---
+# Authentication
+
+All employees and contractors must use multi-factor authentication for e-mail, the VPN and every administrative console. MFA is enforced by the identity provider and exceptions are not permitted. Single sign-on through SAML is available for all customer-facing applications.
+
+# Encryption
+
+Customer data is encrypted at rest with AES-256 and in transit with TLS 1.2 or higher. Encryption keys are managed in a cloud key management service with automatic yearly rotation. Laptops use full disk encryption.
+
+# Vulnerability management
+
+Critical vulnerabilities are patched within 14 days and high ones within 30 days. External penetration tests are performed once a year by an independent firm and the findings are tracked to closure. We do not currently run red team exercises.
+
+# Security operations
+
+Logs from production systems are collected in a central SIEM and retained for 12 months. A 24x7 security operations center is planned for 2027 and is not yet in place. Alerts are reviewed during business hours today.
+
+# People
+
+All staff complete security awareness training when they join and every year after that, with quarterly phishing simulations.
+
+=== proteccion-de-datos.md ===
+---
+title: Política de protección de datos
+reviewed: 2026-08-20
+---
+# Delegado de protección de datos
+
+La empresa ha designado un delegado de protección de datos (DPO) que depende directamente de la dirección y es el punto de contacto con la autoridad de control.
+
+# Proveedores y subencargados
+
+Los subencargados del tratamiento se evalúan antes de su contratación y se formalizan mediante contrato conforme al artículo 28 del RGPD. La lista de subencargados está disponible para los clientes bajo petición.
+
+# Conservación
+
+Los datos de los clientes se conservan mientras dure el contrato y se suprimen en un plazo máximo de 90 días tras su finalización.
+
+# Certificaciones
+
+La certificación ISO 27001 está en curso y se prevé obtenerla durante 2027. Actualmente no disponemos del certificado.

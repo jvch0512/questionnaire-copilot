@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'">
+<title>questionnaire-copilot</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div>
+    <h1>questionnaire-copilot</h1>
+    <p class="sub">Paste your security policies and a customer questionnaire. Get draft answers with citations, a confidence level, and flags for stale sources, planned-not-done controls and questions that need an owner. Works in English and Spanish. Runs in this tab, nothing is uploaded and no model is called.</p>
+  </div>
+  <button type="button" id="sample">Load sample</button>
+</header>
+<main>
+  <div class="panel">
+    <h2>Policies (separate documents with a line "=== name.md ===")</h2>
+    <textarea id="policies" rows="12" spellcheck="false"></textarea>
+    <h2>Questionnaire (CSV with an id and a question column)</h2>
+    <textarea id="questions" rows="7" spellcheck="false"></textarea>
+    <p class="hint">Optional front matter in each policy: <code>reviewed: 2026-06-15</code>. Documents older than 12 months are flagged. Answers are extracted from your text, so check each one against reality before sending.</p>
+  </div>
+  <div id="out"></div>
+</main>
+<script type="module" src="app.js"></script>
+</body>
+</html>

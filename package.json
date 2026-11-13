@@ -1,0 +1,17 @@
+{
+  "name": "questionnaire-copilot",
+  "version": "1.0.0",
+  "description": "Answer security questionnaires from your own policies: BM25 retrieval, yes/no/partial detection, citations, stale-document and conflict flags, English and Spanish",
+  "license": "MIT",
+  "type": "module",
+  "bin": { "questionnaire-copilot": "dist/src/cli.js" },
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && node dist/src/server-main.js",
+    "test": "tsc && node --test dist/test/*.test.js"
+  },
+  "repository": "github:jvch0512/questionnaire-copilot",
+  "keywords": ["security-questionnaire", "pre-sales", "grc", "bm25", "compliance", "rfp", "typescript"],
+  "devDependencies": { "@types/node": "^22.0.0", "typescript": "^5.6.0" },
+  "engines": { "node": ">=20" }
+}
